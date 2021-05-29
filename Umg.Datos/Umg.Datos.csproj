@@ -9,10 +9,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Mapping\Ventas\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\Umg.Entidades\Umg.Entidades.csproj" />
   </ItemGroup>
 

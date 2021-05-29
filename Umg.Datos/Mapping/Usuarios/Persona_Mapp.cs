@@ -14,6 +14,8 @@ namespace Umg.Datos.Mapping.Usuarios
         {
             builder.ToTable("persona_")
                   .HasKey(pe => pe.idPersona_);
+            builder.Property(pe => pe.idPersona );
+
             builder.Property(pe => pe.tipoDePersona)
                 .HasMaxLength(50);
             builder.Property(pe => pe.tipoDocumento)

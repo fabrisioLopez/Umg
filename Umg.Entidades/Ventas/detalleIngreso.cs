@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Umg.Entidades.Almacen;
 
 namespace Umg.Entidades.Ventas
 {
@@ -13,7 +14,9 @@ namespace Umg.Entidades.Ventas
         public int idArticulo { get; set; } //f
 
         public int cantidadDetalleIngreso { get; set; }
+        [required]
 
         public decimal precioDetalleIngreso { get; set; }
+        [required]
     }
 }

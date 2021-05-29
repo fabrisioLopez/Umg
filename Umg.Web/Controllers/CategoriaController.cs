@@ -29,7 +29,7 @@ namespace umg.Web.Controllers
         }
 
         // GET api/Categorias/2
-        [HttpGet("{idcategoria}")]
+        [HttpGet("{idcategoria")]
 
         public async Task<ActionResult<categoria>> GetCategoria(int id)
         {

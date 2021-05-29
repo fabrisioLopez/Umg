@@ -18,7 +18,7 @@ namespace Umg.Datos.Mapping.Usuarios
                 .HasMaxLength(50);
             builder.Property(r => r.descripcionRol)
                 .HasMaxLength(100);
-
+            builder.Property(r => r.condicion);
 
         }
     }

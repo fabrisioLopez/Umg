@@ -2,29 +2,32 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
+using Umg.Entidades.Almacen;
 
 namespace Umg.Entidades.Usuarios
 {
   public  class usuario
     {
         public int idUsuario { get; set; }
-        [Required]
-        [StringLength(100, MinimumLength = 10)]
+       
 
         public int idRol { get; set; }
 
         public int idTelefono { get; set; }
         public string nombreUsuario { get; set; }
+        [required]
+        [StringLength(100, MinimumLength = 3, ErrorMessage = "el nombre de usuario no debe de tener mas de 100 caracteres, por favor validar")]
 
         public int numeroDocumentoUsuario { get; set; }
 
         public string emailUsuario { get; set; }
+        [required]
 
         [DataType(DataType.EmailAddress)]
 
-        public string passwordHash { get; set; }
+        public byte passwordHash { get; set; }
 
-        public string passwordSalt { get; set; }
+        public byte passwordSalt { get; set; }
 
 
 

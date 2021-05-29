@@ -9,9 +9,11 @@ namespace Umg.Entidades.Almacen
     {
         public int idCategoria { get; set; }
         [Required]
+
         [StringLength(50, MinimumLength = 3, ErrorMessage = "el nombre no debe de tener mas de 50 caracteres, por favor validar")]
 
         public string nombreCategoria { get; set; }
+        [Required]
         [StringLength(256)]
 
 

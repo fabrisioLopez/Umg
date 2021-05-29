@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
+using Umg.Entidades.Almacen;
 
 namespace Umg.Entidades.Ventas
 {
@@ -11,6 +13,10 @@ namespace Umg.Entidades.Ventas
         public int idVenta { get; set; }
 
         public String tipoComprobanteVenta { get; set; }
+        [required]
+        [StringLength(50, MinimumLength = 3, ErrorMessage = "el tipo comprobante venta no debe de tener mas de 50 caracteres, por favor validar")]
+
+
 
         public decimal impuesto { get; set; }
 

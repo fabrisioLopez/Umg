@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using Umg.Entidades.Almacen;
 
 namespace Umg.Entidades.Ventas
 {
@@ -11,8 +12,10 @@ namespace Umg.Entidades.Ventas
         public int idIngreso { get; set; }
 
         public decimal totalIngreso { get; set; }
+        [required]
 
 
         public bool condicion { get; set; }
+        
     }
 }

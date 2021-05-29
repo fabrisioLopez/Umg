@@ -17,8 +17,8 @@ namespace Umg.Datos.Mapping.Almacen
                 .HasMaxLength(50);
             builder.Property(c => c.descripcion)
                 .HasMaxLength(256);
+            builder.Property(c => c.condicion);
 
-
-    }
+        }
 }
 }

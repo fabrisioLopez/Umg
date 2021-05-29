@@ -13,7 +13,9 @@ namespace Umg.Datos.Mapping.Almacen
         {
             builder.ToTable("articulo_")
                   .HasKey(ar => ar.idCodigoArticulo);
-            
+            builder.Property(ar => ar.precioArticulo);
+            builder.Property(ar => ar.precioArticulo);
+
 
 
         }
